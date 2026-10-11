@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UET Mardan Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- 1. NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-4" style="background-color: #1b3a6b;">
+    <div class="container flex-column">
+
+      <!-- UET Logo -->
+      <img src="small_logo.png" alt="UET Logo" width="90" class="mb-2">
+
+      <!-- Line 1: Portal name -->
+      <a class="navbar-brand fw-bold fs-3 mb-3" href="#home">UET Mardan Portal</a>
+
+      <!-- Line 2: Links -->
+      <ul class="navbar-nav flex-row flex-wrap justify-content-center gap-3">
+        <li class="nav-item"><a class="nav-link fs-5" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link fs-5" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link fs-5" href="#events">Events</a></li>
+        <li class="nav-item"><a class="nav-link fs-5" href="#schedule">Schedule</a></li>
+        <li class="nav-item"><a class="nav-link fs-5" href="#registration">Registration</a></li>
+        <li class="nav-item"><a class="nav-link fs-5" href="#contact">Contact</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <div class="text-center p-5" id="home" style="background-image: url('images\ \(4\).jpeg'); background-size: cover; background-position: center; height: 500px;">
+  <div style="background-color: rgba(0, 0, 0, 0.5); padding: 30px; border-radius: 10px; display: inline-block; margin-top: 80px;">
+    <h1 class="text-white fw-bold">Welcome to UET Mardan Events Portal</h1>
+    <p class="text-white fs-5">All university events in one place.</p>
+  </div>
+</div>
+
+  <!-- ABOUT -->
+  <div class="text-center p-4">
+    <h2>About Us</h2>
+    <p>Welcome to the UET Mardan Student Activities Portal — your one-stop place for everything happening on campus. Whether it is a tech fest, sports gala, cultural day, or seminar, you can find all the details here and register in just a few clicks.</p>
+  </div>
+
+ <!-- 3. EVENTS -->
+  <div class="container mt-5" id="events">
+    <h2 class="text-center fw-bold mb-4">Events</h2>
+
+    <div class="row g-4">
+
+      <!-- Event 1: Tech Fest -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm">
+                      <img src="images.jpeg" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Tech Fest">
+
+            <div class="card-body">
+            <h5 class="card-title fw-bold">Tech Fest</h5>
+            <p class="card-text">A full day event where students present programming, robotics and IT projects to compete for exciting prizes.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 2: Sports Gala -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="images (1).jpeg" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Sports Gala">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Sports Gala</h5>
+            <p class="card-text">Annual sports event featuring cricket, football and other games where all departments compete for the trophy.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 3: Independence Day -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="images (2).jpeg" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Independence Day">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Culture Day</h5>
+            <p class="card-text">A patriotic celebration with flag hoisting, national songs and a cultural program organized by students on campus.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 4: AI Seminar -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="images (3).jpeg" class="card-img-top" style="height: 200px; object-fit: cover;" alt="AI Seminar">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">AI Seminar</h5>
+            <p class="card-text">An informative seminar about Artificial Intelligence and its modern applications in research and daily life.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 4. SCHEDULE -->
+  <div class="container mt-4">
+    <h2 class="text-center">Event Schedule</h2>
+    <table class="table table-bordered">
+      <tr class="table-dark">
+        <th>Event Name</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Venue</th>
+      </tr>
+      <tr>
+        <td>Tech Fest</td>
+        <td>15 May 2025</td>
+        <td>10:00 AM</td>
+        <td>Main Hall</td>
+      </tr>
+      <tr>
+        <td>Sports Gala</td>
+        <td>20 May 2025</td>
+        <td>9:00 AM</td>
+        <td>Sports Ground</td>
+      </tr>
+      <tr>
+        <td>Cultural Day</td>
+        <td>25 May 2025</td>
+        <td>11:00 AM</td>
+        <td>Auditorium</td>
+      </tr>
+      <tr>
+        <td>AI Seminar</td>
+        <td>30 May 2025</td>
+        <td>2:00 PM</td>
+        <td>CS Lab</td>
+      </tr>
+    </table>
+  </div>
+
+ <!-- 5. REGISTRATION FORM -->
+  <div class="container mt-4 mb-5">
+    <h2 class="text-center fw-bold mb-4">Student Event Registration</h2>
+
+    <div class="card shadow-lg p-4 border-dark">
+
+      <form>
+
+        <!-- Row 1: Full Name + Email -->
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label class="form-label fw-bold">Full Name</label>
+            <input type="text" class="form-control" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label class="form-label fw-bold">Email</label>
+            <input type="email" class="form-control" placeholder="Enter your email" required>
+          </div>
+        </div>
+
+        <!-- Row 2: Department + Select Event -->
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label class="form-label fw-bold">Department</label>
+            <select class="form-select" required>
+              <option value="">Select Department</option>
+              <option>Computer Science</option>
+              <option>Electrical Engineering</option>
+              <option>Mechanical Engineering</option>
+              <option>Civil Engineering</option>
+            </select>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label class="form-label fw-bold">Select Event</label>
+            <select class="form-select" required>
+              <option value="">Select Event</option>
+              <option>Tech Fest</option>
+              <option>Sports Gala</option>
+              <option>Cultural Day</option>
+              <option>AI Seminar</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Row 3: Gender -->
+        <div class="mb-3">
+          <label class="form-label fw-bold d-block">Gender</label>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="male" required>
+            <label class="form-check-label fw-bold" for="male">Male</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="female">
+            <label class="form-check-label fw-bold" for="female">Female</label>
+          </div>
+        </div>
+
+        <!-- Row 4: Message -->
+        <div class="mb-3">
+          <label class="form-label fw-bold">Message</label>
+          <textarea class="form-control" rows="4" placeholder="Write your message here..."></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary px-5 fw-bold">Submit</button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
